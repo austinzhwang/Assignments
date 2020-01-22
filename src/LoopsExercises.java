@@ -28,7 +28,7 @@ public class LoopsExercises {
                 System.out.print(i + " ");
             }
         }
-        System.out.println("Sum of odd #'s: " + oddSum);
+        System.out.println("\nSum of odd #'s: " + oddSum);
 
         // output all even #'s up to the user input and their sum
         System.out.print("Enter a number: ");
@@ -40,7 +40,17 @@ public class LoopsExercises {
                 System.out.print(i + " ");
             }
         }
-        System.out.println("Sum of even #'s: " + evenSum);
+        System.out.println("\nSum of even #'s: " + evenSum);
+        //6
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                if (j <= i) {
+                    System.out.print(j);
+                }
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
 
         //7
         for (int i = 1; i <= 5; i++) {
