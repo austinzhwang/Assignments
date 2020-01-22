@@ -11,10 +11,10 @@ public class SwitchMonths {
         String months;
         switch (input) {
             case 28:
-                case29: {
+                case 29:
                     months = "February";
                     break;
-                }
+
             case 30: months = "September April June November";
             break;
             case 31: months = "January March May July September October December";
