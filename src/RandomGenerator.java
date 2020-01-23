@@ -13,8 +13,7 @@ public class RandomGenerator {
         output("Done.");
     }
 
-    private static void output(String aMessage)
-    {
+    private static void output(String aMessage) {
         System.out.println(aMessage);
     }
 }
