@@ -63,6 +63,59 @@ public class LoopsExercises {
             System.out.println();
         }
 
+        //8
+        int counter = 1;
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4; j++) {
+                if (j <= i) {
+                    System.out.print(counter++);
+                }
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        //9
+        int counter101 = 0;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 5; j++) {
+                if (j <= i) {
+                    if (counter101 % 2 == 0) {
+                        System.out.print(1);
+                    } else {
+                        System.out.print(0);
+                    }
+                }
+                System.out.print(" ");
+                counter101++;
+            }
+            System.out.println();
+        }
+
+        //10
+        in.nextLine();
+        System.out.print("Enter a number:" );
+        String input = in.nextLine();
+        String palindrome = input;
+        String reversed = "";
+
+        for (int i = palindrome.length()-1; i >= 0; i--) {
+            reversed += input.charAt(i);
+        }
+
+        if (palindrome.equals(reversed)) {
+            System.out.println(palindrome + " is a palindrome");
+        } else {
+            System.out.println(palindrome + " is not a palindrome");
+        }
+
+        //11
+        for (int i = 100; i <= 200; i++) {
+            if (i % 9 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
         in.close();
     }
 }
